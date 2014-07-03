@@ -1,5 +1,0 @@
-/Users/zhehaowang/Projects/Code Tests/OOPTests/YieldKeywordTest/YieldKeywordTest/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/Users/zhehaowang/Projects/Code Tests/OOPTests/YieldKeywordTest/YieldKeywordTest/bin/Debug/YieldKeywordTest.exe.mdb
-/Users/zhehaowang/Projects/Code Tests/OOPTests/YieldKeywordTest/YieldKeywordTest/bin/Debug/YieldKeywordTest.exe
-/Users/zhehaowang/Projects/Code Tests/OOPTests/YieldKeywordTest/YieldKeywordTest/obj/x86/Debug/YieldKeywordTest.exe
-/Users/zhehaowang/Projects/Code Tests/OOPTests/YieldKeywordTest/YieldKeywordTest/obj/x86/Debug/YieldKeywordTest.exe.mdb

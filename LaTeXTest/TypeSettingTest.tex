@@ -1,10 +1,68 @@
 \documentclass{article}
 
+% the options fields are case sensitive
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+% encoding options utf8 will allow the typesetting for chinese characters?
+% \usepackage[utf8]{inputenc}
+% ok, unfortunately it does not...XeLaTeX with XeCJK seems to be a more popular choice
+
 \begin{document}
 \par
 This is a test for ``double quotation'' mark, and `single quotation' mark.
 \par
 See how default math fonts differ from normal font? 1 and $1$, 2 and $2$.
 \par
-See how the tildes differ: \~{} and $\sim$.
+See how the tildes differ: \~{} and $\sim$. The language rule in package babel is defined as French, notice that space before colon? It's not there in the source!
+\par
+Sometimes na\''{i}ve, na\''\i ve, na\``ive, na\"\i ve, Schr\"odinger, \textbackslash' adds a dot to its trailing character.
+\par
+Let's debug a long English paragraph, and see how different spacing between words works. See box alignment in action!
+\section{Section vs part}
+\par
+\begin{verbatim}
+After verbatim, having tons of spaces between    stuff gets printed. \\Latex commands gets printed \ldots...
+\end{verbatim}
+\par
+Whose woods these are I think I know.   
+His house is in the village though; 
+He will not see me stopping here   
+To watch his woods fill up with snow.   
+My little horse must think it queer   
+To stop without a farmhouse near   
+Between the woods and frozen lake   
+The darkest evening of the year.   
+\part{Part vs paragraph}
+He gives his harness bells a shake   
+To ask if there is some mistake.   
+The only other sound's the sweep   
+Of easy wind and downy flake.   
+The woods are lovely, dark and deep,   
+But I have promises to keep,   
+And miles to go before I sleep,   
+And miles to go before I sleep.
+%如果我在源文件中打入中文，而不指定font/input encoding，会出问题么？是会的。
+
+\begin{tabular}{|r|l|c|}
+\hline
+this is a line & random stuff & and this is central alignment\\
+this is another line & see how it aligns & the | in the table parameter helps \\
+\hline
+\end{tabular}
+
+\par
+Folllowing is a trick for float aligning in latex tabulars.
+
+\par
+\begin{tabular}{c|r @{.} l}
+Pi expression       &
+\multicolumn{2}{c}{Value} \\
+\hline
+$\pi$               & 3&1416  \\
+$\pi^{\pi}$         & 36&46   \\
+$(\pi^{\pi})^{\pi}$ & 80662&7 \\
+\end{tabular}
+
 \end{document}

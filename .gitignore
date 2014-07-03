@@ -1,0 +1,11 @@
+*
+!*/
+!*.cs
+!*.c
+!*.h
+!*.cpp
+!*.java
+!*.md
+!.gitignore
+!Makefile
+!*.tex
