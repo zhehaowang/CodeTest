@@ -9,3 +9,5 @@
 !.gitignore
 !Makefile
 !*.tex
+!*.py
+!*.js
