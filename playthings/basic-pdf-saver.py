@@ -1,6 +1,8 @@
 from HTMLParser import HTMLParser
 import requests
 
+# Naive scraper that gets you Types and Programming Languages pdf from UCLA library; hard coded for now.
+
 class MyHTMLParser(HTMLParser):
 	def __init__(self):
 		HTMLParser.__init__(self)
