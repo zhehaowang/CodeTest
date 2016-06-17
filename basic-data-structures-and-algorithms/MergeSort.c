@@ -1,5 +1,4 @@
-//Started May 1st, 10:10PM, medium status, just read merge sort before implementation
-//Untested on May 1st by night
+// Untested
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +16,7 @@ int mergeSort(int *array, int begin, int end, int * dstArray)
 	mergeSort(array, mid, end, dstArray);
 	merge(array + begin, array + mid, dstArray + begin, mid - begin, end - mid);
 	memcpy(array + begin, dstArray + begin, end - begin);
-return 0;
+	return 0;
 }
 
 int printArray(int * array, int length)
@@ -36,7 +35,7 @@ int merge(int * src1, int * src2, int * dst, int length1, int length2)
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	while ( i < length1 && j < length2)
+	while (i < length1 && j < length2)
 	{
 		if (src1[i] > src2[j])
 		{
@@ -48,7 +47,7 @@ int merge(int * src1, int * src2, int * dst, int length1, int length2)
 
 int main()
 {
-	int array[LENGTH] = {1, 2, 3, 4, 5};
+	int array[LENGTH] = {3, 1, 2, 4, 5};
 	int dstArray[LENGTH] = {0};
 	printArray(array, LENGTH);
 	

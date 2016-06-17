@@ -33,8 +33,8 @@ int topDownSplitMerge(int *A, int iBegin, int iEnd, int *B)
     return 0;
 }
  
-//  left half is A[iBegin :iMiddle-1]
-// right half is A[iMiddle:iEnd-1   ]
+//  left half is A[iBegin  : iMiddle - 1]
+// right half is A[iMiddle :    iEnd - 1]
 int topDownMerge(int *A, int iBegin, int iMiddle, int iEnd, int *B)
 {
     int i0 = iBegin, i1 = iMiddle;
@@ -74,7 +74,7 @@ int debugArray(int * temp, int length)
 
 int main()
 {
-	int array[MAXLENGTH] = {1, 2, 3, 4, 5};
+	int array[MAXLENGTH] = {3, 1, 2, 4, 5};
 	int temp[MAXLENGTH] = {0};
 	topDownMergeSort(array, temp, MAXLENGTH);
 	debugArray(array, MAXLENGTH);
