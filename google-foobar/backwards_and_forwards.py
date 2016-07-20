@@ -1,4 +1,5 @@
 # Google Foo.Bar challenge level 1 - backwards and forwards
+# Given 0 <= n <= 1000, find the smallest base i such that n expressed in base i is a palindrome
 
 def palin(num_list):
     return num_list == num_list[::-1]
